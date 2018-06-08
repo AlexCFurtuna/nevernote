@@ -4,4 +4,30 @@
 @import 'normalize';
 @import 'global.scss';
 @import 'docs.scss';
-@import 'welcome.scss'
+@import 'welcome.scss';
+
+// FOOTER STYLING (OPTIONAL)
+.header_inner nav a {
+  font-weight: bolder;
+}
+p.notice {
+  width: 20%;
+  margin: 3em auto;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #C0C1C1;
+}
+footer {
+	background: #d9534f;
+  position: fixed;
+  bottom: 0;
+	width: 100%;
+	padding: 1rem 0;
+	color: white;
+	text-align: center;
+	@include bold_font;
+	p {
+		margin: 0;
+		font-size: .65rem;
+	}
+}

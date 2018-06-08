@@ -1,13 +1,20 @@
 // DOCS INDEX
-
+.btn {
+	background-color: #d9534f;
+	padding: 10px;
+	border-radius: 0.4rem;
+	color: white;
+}
+.wrapper_with_padding {
+	width: 80%;
+}
 	#docs {
  .doc {
 	 background: #78594B;
 	 width: 90%;
 	 min-height: 100px;
-	 margin: 1rem 1%;
+	 margin: 1rem auto;
 	 padding: 1.5rem 2.5%;
-	 float: left;
 	 border-radius: 2.9rem;
 	 position: relative;
 	 text-align: center;
