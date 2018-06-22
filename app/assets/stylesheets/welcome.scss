@@ -1,20 +1,24 @@
 // STYLING FOR WELCOME PAGE
 body {
 	background-color: white;
+	margin: 0 auto;
 }
 #banner {
 	background-image: url(image_path("landing.jpg"));
 	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: top center;
+	background-position:top center;
 	width: 100%;
 	min-height: 1200px;
 	display: table;
+	margin-top: -15px;
+
 	.banner_content {
 		display: table-cell;
 		vertical-align: middle;
 		text-align: center;
+		margin: 0 auto;
 		h1 {
 			color: #5cb85c;
 			font-size: 2.5rem;
@@ -45,7 +49,6 @@ body {
 }
 
 #callouts {
-	background-image: image-url("callout_background.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: top center;
@@ -86,4 +89,25 @@ body {
 			margin: 0 0 2.5rem 0;
 			color: #a7a8a8;
 		}
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+	// Welcome page
+	#banner {
+		width: 100%;
+	}
+	div#float-right {
+		float: none;
+	}
+	#bottom_cta {
+		display: none;
+	}
+	#callouts {
+		margin-bottom: 20px;
+	}
+	// Docs index
+	
 }

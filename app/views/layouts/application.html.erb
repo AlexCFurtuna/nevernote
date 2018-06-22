@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'true' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'true' %>
+    <meta name="viewport" content="width=device-width">
+    <%= csrf_meta_tags %>
+  </head>
+</html>
+<title>NeverNote | Your life's work!</title>
+<body>
+  <div class="topnav" id="myTopnav">
+    <%= link_to "NeverNote", root_path, id: "logo" %>
+      <div id="float-right">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        <% if user_signed_in? %>
+          <%= link_to "Your Docs", docs_path %>
+          <%= link_to "Create Doc", new_doc_path %>
+          <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
+        <% else %>
+          <%= link_to "Login", new_user_session_path %>
+        <% end %>
+      </div>
+
+  </div>
+
+  <p class="notice">
+    <%= notice %>
+  </p>
+  <p class="alert">
+    <%= alert %>
+  </p>
+  <%= yield %>
+  <footer>
+    <p>NeverNote &copy; Alex Furtuna</p>
+  </footer>
+</body>

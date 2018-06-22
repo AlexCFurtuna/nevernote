@@ -1,10 +1,11 @@
 /*
- *= require_self
+*= require_self
  */
 @import 'normalize';
 @import 'global.scss';
 @import 'docs.scss';
 @import 'welcome.scss';
+@import 'nav.scss';
 
 // FOOTER STYLING (OPTIONAL)
 .header_inner nav a {
@@ -12,7 +13,7 @@
 }
 p.notice {
   width: 20%;
-  margin: 3em auto;
+  margin: 0 auto;
   text-align: center;
   font-size: 1.5rem;
   color: #C0C1C1;
