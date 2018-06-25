@@ -38,8 +38,7 @@
 
 // DOCS SHOW
 
-#doc_show {
- .title {
+ h1 {
 	 @include bold_font;
 	 color: #78594B;
 	 font-size: 2.0rem;
@@ -47,26 +46,21 @@
 	 padding-bottom: 1rem;
 	 border-bottom: 1.0px solid rgba(82,158,204, 0.2);
 	 text-align: center;
-
  }
  p {
-	 font-size: 1.0rem;
-	 line-height: 1.75;
- }
- .buttons {
-	 margin-top: 3rem;
+	 color: #78594B;
+	 font-size: 25px;
+	 width: 50%;
 	 text-align: center;
-	 a.button {
-		 padding: .2rem 1.5rem;
-		 border-radius: 0.1rem;
-		 text-decoration: none;
-		 color: #529ECC;
-		 border: 5px solid #529ECC;
-		 @include bold_font;
-		 background: transparent;
-	 }
+
  }
-}
+ section {
+	 width: 40%;
+	 float: right;
+	 min-height: 800px;
+	 border: 1px solid black;
+ }
+
 
 // DOCS NEW
 h1 {

@@ -4,6 +4,18 @@
 <p>
   <%= @doc.content %>
 </p>
-<%= link_to "All docs", docs_path, class: "btn" %>
-<%= link_to "Fix doc", edit_doc_path(@doc), class: "btn" %>
-<%= link_to "Trash it", doc_path(@doc), method: :delete, data: { confirm: "Are you sure?" }, class: "btn" %>
+<section>
+  <div class="container">
+    <h2><% @docs.each do |doc| %></h2>
+      <p><%= link_to doc.title %></p>
+      <% end %>
+  </div>
+</section>
+<%= link_to "All docs", docs_path, class: "btn-show" %>
+<%= link_to "Fix doc", edit_doc_path(@doc), class: "btn-show" %>
+<%= link_to "Trash it", doc_path(@doc), method: :delete, data: { confirm: "Are you sure?" }, class: "btn-show" %>
+<style media="screen">
+  .btn {
+
+  }
+</style>
