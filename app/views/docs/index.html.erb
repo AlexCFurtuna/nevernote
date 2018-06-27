@@ -26,5 +26,13 @@
   </div>
 </div>
 <div class="section-two">
-  
+  <%= month_calendar events: @meetings do |date, meetings| %>
+  <%= date %>
+
+  <% meetings.each do |meeting| %>
+    <div>
+      <%= meeting.name %>
+    </div>
+  <% end %>
+<% end %>
 </div>
