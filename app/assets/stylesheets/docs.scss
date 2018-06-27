@@ -1,10 +1,13 @@
 // DOCS INDEX
-
-.wrapper_with_padding {
-	max-width: 40%;
-	margin: 0;
-	float: left;
+div.section-one {
+	max-height: 695px;
+	overflow-y: scroll;
+	width: 40%;
 	margin-left: 2em;
+}
+.wrapper_with_padding {
+	max-width: 70%;
+	float: left;
 	h1 {
 		font-size: 1.5em;
 	}
@@ -17,10 +20,9 @@ ul li {
  .doc {
 	 background: white;
 	 margin: 1rem 2em;
-	 border-radius: 2.9rem;
-	 text-align: center;
-	 border: 3px solid #d9534f;
+	 text-align: left;
 	 padding-top: .5em;
+	 display: list-item;
 	 .title {
 		 color: #d9534f;
 		 margin: 0 auto;
@@ -29,7 +31,6 @@ ul li {
 		 width: 90%;
 	 }
 	 .data {
-		 position: relative;
 		 bottom: .25rem;
 		 color: #d9534f;
 		 font-weight: lighter;
@@ -37,7 +38,6 @@ ul li {
 		 text-align: center;
 	 }
 	 .content {
-		 position: relative;
 		 color: $light_gray;
 		 font-weight: bold;
 		 font-size: .5rem;
@@ -49,13 +49,6 @@ ul li {
  }
  a:-webkit-any-link {
 	 text-decoration: none;
- }
- .section-two {
-	
-	 float: right;
-	 height: 800px;
-	 width: 70%;
-	 margin: 5px;
  }
 
 // DOCS SHOW
@@ -69,6 +62,23 @@ ul li {
 	 margin-bottom: 1.25rem;
 	 padding-bottom: 1rem;
 	 text-align: center;
+	 text-transform: none;
+ }
+ #sticky {
+	 position: -webkit-sticky;
+	 position: sticky;
+	 top: 0;
+	 padding: 30px 10px 0 10px;
+	 background-color: white;
+	 h1 {
+		 background-color: white;
+		 font-size: 2em;
+		 font-weight: 400;
+		 color: #5cb85c;
+		 margin: -30px auto 0 auto;
+		 padding: 20px;
+
+	 }
  }
  .container {
 	 display: flex;
@@ -135,6 +145,26 @@ ul li {
 		 font-size: 1.5em;
 	 }
  }
+
+// DOCS SHOW_PARTIAL
+div.section-two {
+	margin-top: 30px;
+	width: 50%;
+	float: right;
+	margin-right: 4em;
+	h1 {
+		color: #5cb85c;
+		font-weight: 400;
+
+	}
+}
+div#calendar button {
+	margin: 0 auto;
+	}
+table, div.calendar-heading {
+	text-align: center;
+	margin: 0 auto;
+}
 
 
 // DOCS NEW

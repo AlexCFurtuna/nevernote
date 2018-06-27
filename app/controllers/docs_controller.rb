@@ -4,6 +4,7 @@ class DocsController < ApplicationController
 
 	def index
 		@docs = Doc.where(user_id: current_user)
+		@meetings = Meeting.all
 	end
 
 	def show

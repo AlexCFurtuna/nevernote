@@ -1,38 +1,35 @@
-<div class="section">
-  <div class="wrapper_with_padding">
-    <h1>Ola! Here are your notes!</h1>
-    <div class="clearfix" id="docs">
-      <% unless @docs.blank? %>
-        <% @docs.each do |doc| %>
-          <a href="<%= (url_for [doc]) %>">
-            <ul class="doc">
-              <li class="title"><%= doc.title %></li>
-              <li class="data">Created: <%= time_ago_in_words(doc.created_at) %> ago</li>
-              <li class="data">Last Updated: <%= time_ago_in_words(doc.updated_at) %> ago</li>
-              <li class="content">
-                <%= truncate(doc.content, length:50) %>
-              </li>
-            </ul>
-          </a>
+<div class="container">
+  <div class="section-one">
+    <div class="wrapper_with_padding">
+      <div id="sticky">
+        <h1>Ola! Here are your notes!</h1>
+      </div>
+      <div class="clearfix" id="docs">
+        <% unless @docs.blank? %>
+          <% @docs.each do |doc| %>
+            <a href="<%= (url_for [doc]) %>">
+              <ul class="doc">
+                <li class="title"><%= doc.title %></li>
+                <li class="data">Created: <%= time_ago_in_words(doc.created_at) %> ago</li>
+                <li class="data">Last Updated: <%= time_ago_in_words(doc.updated_at) %> ago</li>
+                <li class="content">
+                  <%= truncate(doc.content, length:50) %>
+                </li>
+              </ul>
+            </a>
+          <% end %>
+        <% else %>
+          <h2>Create Doc!</h2>
+          <p>Start Creating Documents and Organizing your Cabinet!</p>
+          <button>
+            <%= link_to "Create Doc", new_doc_path %>
+          </button>
         <% end %>
-      <% else %>
-        <h2>Create Doc!</h2>
-        <p>Start Creating Documents and Organizing your Cabinet!</p>
-        <button>
-          <%= link_to "Create Doc", new_doc_path %>
-        </button>
-      <% end %>
+      </div>
     </div>
   </div>
-</div>
-<div class="section-two">
-  <%= month_calendar events: @meetings do |date, meetings| %>
-  <%= date %>
+  <div class="section-two">
+    <%= render 'calendar' %>
+  </div>
 
-  <% meetings.each do |meeting| %>
-    <div>
-      <%= meeting.name %>
-    </div>
-  <% end %>
-<% end %>
 </div>
