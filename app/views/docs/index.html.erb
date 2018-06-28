@@ -28,8 +28,25 @@
       </div>
     </div>
   </div>
-  <div class="section-two">
-    <%= render 'calendar' %>
-  </div>
 
-</div>
+  <div class="container">
+    <div id="toHide" class="section-two two">
+      <h1>Did you forget something hombre?</h1>
+      <h2>Well put your sombreros on because from now on with NeverNote you shall not forget anything again</h2>
+      <p> <button class="trigger" type="button" name="button"> <a href="#">Click here</a> </button> and discover our new NeverNote Calendar nEvent </p>
+    </div>
+
+    <!--<button type="button" name="button"> <a href="">Hold you sombreros because this ride is going to be bumpy!</a> </button>-->
+
+    <div class="section-two">
+      <%= render 'calendar' %>
+    </div>
+  </div>
+<script type='text/javascript'>
+$(function() {
+ $('.trigger').click(function() {
+  $(".section-two").show(2500);
+  $(".section-two.two").hide(1500);
+});
+});
+</script>

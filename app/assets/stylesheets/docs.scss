@@ -1,3 +1,6 @@
+.container {
+	margin-top: 2em;
+}
 // DOCS INDEX
 div.section-one {
 	max-height: 695px;
@@ -22,7 +25,6 @@ ul li {
 	 margin: 1rem 2em;
 	 text-align: left;
 	 padding-top: .5em;
-	 display: list-item;
 	 .title {
 		 color: #d9534f;
 		 margin: 0 auto;
@@ -49,6 +51,48 @@ ul li {
  }
  a:-webkit-any-link {
 	 text-decoration: none;
+ }
+ // DOCS INDEX_PARTIAL
+
+ .section-two.two {
+ 	display: inline-block;
+ 	margin-top: 30px;
+ 	float: left;
+ 	margin-right: 4em;
+ 	height: 640px;
+ 	background-color: #d9534f;
+	border-radius: 10px;
+	h1, h2, button, p, small {
+		color: white;
+		border: 3px solid white;
+		border-radius: 10px;
+		width: 60%;
+		margin: 40px auto;
+		padding: 20px;
+		text-align: center;
+		font-weight: lighter;
+	}
+ }
+ div.section-two {
+	 display: none;
+	 margin-top: 30px;
+	 width: 900px;
+	 float: right;
+	 margin-right: 4em;
+	 height: 640px;
+   margin-right: 4em;
+ 	h1 {
+ 		color: #5cb85c;
+ 		font-weight: 400;
+ 	}
+ }
+
+ div#calendar button {
+ 	margin: 0 auto;
+ 	}
+ table, div.calendar-heading {
+ 	text-align: center;
+ 	margin: 0 auto;
  }
 
 // DOCS SHOW
@@ -146,25 +190,7 @@ ul li {
 	 }
  }
 
-// DOCS SHOW_PARTIAL
-div.section-two {
-	margin-top: 30px;
-	width: 50%;
-	float: right;
-	margin-right: 4em;
-	h1 {
-		color: #5cb85c;
-		font-weight: 400;
 
-	}
-}
-div#calendar button {
-	margin: 0 auto;
-	}
-table, div.calendar-heading {
-	text-align: center;
-	margin: 0 auto;
-}
 
 
 // DOCS NEW
