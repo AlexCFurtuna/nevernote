@@ -15,3 +15,9 @@
 //= require_tree .
 //= require turbolinks
 //= require_tree .
+$(function() {
+ $('.trigger').click(function() {
+  $(".section-two").show(2500);
+  $(".section-two.two").hide(1500);
+});
+});
