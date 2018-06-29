@@ -1,5 +1,9 @@
-.container {
+html {
+
+}
+div.container {
 	margin-top: 2em;
+
 }
 // DOCS INDEX
 div.section-one {
@@ -21,12 +25,14 @@ ul li {
 }
 	#docs {
  .doc {
-	 background: white;
+	 background-color: #E09891;
+	// background: white;
 	 margin: 1rem 2em;
 	 text-align: left;
 	 padding-top: .5em;
+	 border-radius: 10px;
 	 .title {
-		 color: #d9534f;
+		 color: white;
 		 margin: 0 auto;
 		 font-size: 1em;
 		 letter-spacing: 1px;
@@ -51,12 +57,12 @@ ul li {
  }
  a:-webkit-any-link {
 	 text-decoration: none;
+	 color: white;
  }
  // DOCS INDEX_PARTIAL
 
  .section-two.two {
  	display: inline-block;
- 	margin-top: 30px;
  	float: left;
  	margin-right: 4em;
  	height: 640px;
@@ -72,23 +78,60 @@ ul li {
 		text-align: center;
 		font-weight: lighter;
 	}
+	button {
+
+	}
  }
  div.section-two {
 	 display: none;
-	 margin-top: 30px;
 	 width: 900px;
 	 float: right;
 	 margin-right: 4em;
-	 height: 640px;
+	 height: 650px;
    margin-right: 4em;
+	 border-radius: 10px;
+	 .calendar-heading {
+		 padding: 20px 0 20px 0;
+		 color: white;
+		 a {
+			 margin: 0 60px 0 60px;
+			 padding: 10px;
+		 }
+		 a:hover {
+			 background-color: #555;
+			 border-radius: 10px;
+		 }
+		 span {
+			 font-size: 1.2em;
+		 }
+	 }
+	 .simple-calendar {
+		 background-color: #d9534f;
+		 td, th {
+			 border-color: white;
+			 color: white;
+		 }
+		 .today {
+			 background-color: white;
+		 }
+		 .prev-month, .next-month {
+			 background-color: #FFCAAB;
+			 color: #d9534f;
+			 font-weight: bold;
+		 }
+		 .day:hover, .prev-month:hover, .next-month:hover{
+			 background-color: #555;
+		 }
+	 }
  	h1 {
- 		color: #5cb85c;
+		color: white;
  		font-weight: 400;
  	}
  }
 
+
  div#calendar button {
- 	margin: 0 auto;
+
  	}
  table, div.calendar-heading {
  	text-align: center;
