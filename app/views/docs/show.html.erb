@@ -9,8 +9,8 @@
     <%= simple_form_for @doc do |f| %>
       <%= f.input :title %>
       <%= f.input :content %>
-      <%= f.button :submit %>
-      <%= link_to "Delete", doc_path(@doc), method: :delete, data: { confirm: "Are you sure?" }, class: "btn-show" %>
+      <%= f.button :submit, class: "button" %>
+      <%= link_to "Delete", doc_path(@doc), method: :delete, data: { confirm: "Are you sure?" }, class: "button" %>
     <% end %>
   </div>
   <div id="show-sidebar">

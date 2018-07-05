@@ -9,6 +9,7 @@
           <li id="m-time"><%= meeting.starts_at.strftime("%a, %b %e, %Y") %></li>
         </ul>
         <% end %>
+        <button><%= link_to 'New Meeting', new_meeting_path %></button>
 
       </div>
       <!--<table>
@@ -42,7 +43,7 @@
             <a href="<%= (url_for [doc]) %>">
               <ul class="doc">
                 <li class="title"><%= doc.title %></li>
-                <li class="data float-right">Created: <%= doc.created_at.strftime("%a, %b %e, %Y") %></li>
+                <li class="data float-right"><%= doc.created_at.strftime("%a, %b %e, %Y") %></li>
                 <!--<li class="data float-right">Last Updated: <%= doc.updated_at.strftime("%a, %b %e, %Y") %> ago</li>-->
                 <li class="content">
                 <!--  <span>  <%= truncate(doc.content, length:50) %></span>-->

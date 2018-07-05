@@ -11,6 +11,7 @@ div.container {
 }
 // DOCS INDEX
 .meetings {
+	display: none;
 	width: 100%;
 	max-height: 1000px;
 	overflow-y: scroll;
@@ -34,6 +35,9 @@ ul {
 		font-weight: lighter;
 	}
 }
+button {
+	display: none;
+	}
 }
 div.section-one {
 	border: 2px solid $light_gray;
@@ -274,30 +278,78 @@ form{
 	margin: 0 auto;
 }
 
-
+// MEDIA QUERIES
 
 @media screen and (max-width: 768px) {
-// Docs index
-.wrapper_with_padding {
-	max-width: 90%;
+////// DOCS INDEX
+
+// DOCS/NOTES
+div.container {
+	margin: 0;
+}
+div.section-one {
+	width: 100%;
+	margin: 0 auto;
+	border: none;
+	div#sticky h1 {
+		background-color: white;
+		border-radius: 10px;
+		font-size: 1.3em;
 	}
-	#docs {
- .doc {
-	 min-height: 50px;
-	 background: white;
-	 margin: 1rem 2em;
-	 padding: .5rem 1.5rem;
-	 border-radius: 2.9rem;
-	 text-align: center;
-	 border: 3px solid #5cb85c;
-	 .title {
-		 color: #d9534f;
-		 font-size: 1em;
-		 width: 100%;
-	 }
-	 .title, .data, .content {
-		 margin: 5px auto;
-	 }
-  }
- }
+}
+#docs .doc {
+	min-height: 3em;
+}
+div#toHide.section-two.two{
+	display: none;
+	}
+}
+// DOCS/MEETINGS
+.meetings {
+	display: block;
+	h1 {
+		background-color: white!important;
+		border-radius: 10px;
+		font-size: 1.3em;
+		color: $dark_gray;
+		font-weight: 400;
+		margin: 0;
+		padding: 10px;
+	}
+	ul {
+		min-height: 3em;
+		li {
+			font-size: 1em!important;
+		}
+		li#m-time {
+			font-size: .7em!important;
+		}
+	}
+	button {
+		display: block;
+		padding: 15px;
+		border-radius: 10px;
+		margin: 0 auto;
+	}
+}
+// DOCS/SHOW
+div.container {
+	margin-bottom: 6em;
+}
+div#content {
+	display: none;
+}
+div#show-sidebar {
+	display: none;
+}
+div#header h1 {
+	color: $dark_gray;
+	font-weight: 400;
+}
+#live-content {
+	width: 90%;
+	min-height: 200px;
+	textarea {
+		min-height: 250px;
+	}
 }
