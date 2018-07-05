@@ -1,5 +1,37 @@
 <div class="container">
   <div class="section-one">
+    <div class="meetings">
+      <h1>Meetings</h1>
+      <div class="">
+        <% @meetings.each do |meeting| %>
+        <ul>
+          <li id="m-name"><%= meeting.name %></li>
+          <li id="m-time"><%= meeting.starts_at.strftime("%a, %b %e, %Y") %></li>
+        </ul>
+        <% end %>
+
+      </div>
+      <!--<table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Starts at</th>
+            <th colspan="3"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @meetings.each do |meeting| %>
+            <tr>
+              <td><%= meeting.name %></td>
+              <td><%= meeting.starts_at %></td>
+              <td><%= link_to 'Show', meeting %></td>
+              <td><%= link_to 'Edit', edit_meeting_path(meeting) %></td>
+              <td><%= link_to 'Destroy', meeting, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>-->
+    </div>
     <div class="wrapper_with_padding">
       <div id="sticky">
         <h1>Ola! Here are your notes!</h1>
@@ -10,10 +42,10 @@
             <a href="<%= (url_for [doc]) %>">
               <ul class="doc">
                 <li class="title"><%= doc.title %></li>
-                <li class="data">Created: <%= time_ago_in_words(doc.created_at) %> ago</li>
-                <li class="data">Last Updated: <%= time_ago_in_words(doc.updated_at) %> ago</li>
+                <li class="data float-right">Created: <%= doc.created_at.strftime("%a, %b %e, %Y") %></li>
+                <!--<li class="data float-right">Last Updated: <%= doc.updated_at.strftime("%a, %b %e, %Y") %> ago</li>-->
                 <li class="content">
-                  <%= truncate(doc.content, length:50) %>
+                <!--  <span>  <%= truncate(doc.content, length:50) %></span>-->
                 </li>
               </ul>
             </a>
@@ -29,7 +61,7 @@
     </div>
   </div>
 
-  <div class="container">
+  <div class="">
     <div id="toHide" class="section-two two">
       <h1>Did you forget something hombre?</h1>
       <h2>Well put your sombreros on because from now on with NeverNote you shall not forget anything again</h2>
@@ -45,3 +77,6 @@
 <script type='text/javascript'>
 
 </script>
+<style media="screen">
+
+</style>
