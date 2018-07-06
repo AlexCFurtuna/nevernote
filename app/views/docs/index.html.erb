@@ -4,8 +4,9 @@
       <h1>Meetings</h1>
       <div class="">
         <% @meetings.each do |meeting| %>
+        <a href="<%= (url_for [meeting]) %>">
         <ul>
-          <li id="m-name"><%= meeting.name %></li>
+          <li id="m-name"><%= truncate(meeting.name, length:30) %></li>
           <li id="m-time"><%= meeting.starts_at.strftime("%a, %b %e, %Y") %></li>
         </ul>
         <% end %>
@@ -42,7 +43,7 @@
           <% @docs.each do |doc| %>
             <a href="<%= (url_for [doc]) %>">
               <ul class="doc">
-                <li class="title"><%= doc.title %></li>
+                <li class="title"><%= truncate(doc.title, length:30) %></li>
                 <li class="data float-right"><%= doc.created_at.strftime("%a, %b %e, %Y") %></li>
                 <!--<li class="data float-right">Last Updated: <%= doc.updated_at.strftime("%a, %b %e, %Y") %> ago</li>-->
                 <li class="content">
