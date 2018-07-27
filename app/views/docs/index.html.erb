@@ -7,7 +7,7 @@
         <a href="<%= (url_for [meeting]) %>">
         <ul>
           <li id="m-name"><%= truncate(meeting.name, length:30) %></li>
-          <li id="m-time"><%= meeting.starts_at.strftime("%a, %b %e, %Y") %></li>
+          <li id="m-time"><%= meeting.starts_at.strftime("%l:%M %p, %b %e, %Y") %></li>
         </ul>
         <% end %>
         <button><%= link_to 'New Meeting', new_meeting_path %></button>
