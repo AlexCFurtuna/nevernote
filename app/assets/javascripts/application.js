@@ -20,5 +20,5 @@ $(function() {
   $(".meetings").show(1500);
   $(".wrapper_with_padding").hide(750);
   $(".section-two.two").hide(750);
-});
+  });
 });
