@@ -290,32 +290,6 @@ form{
 	margin: 0 auto;
 }
 
-// MEDIA QUERIES
-
-@media screen and (max-width: 768px) {
-////// DOCS INDEX
-
-// DOCS/NOTES
-div.container {
-	margin: 0;
-}
-div.section-one {
-	width: 100%;
-	margin: 0 auto;
-	border: none;
-	div#sticky h1 {
-		background-color: #2C302E;
-		border-radius: 10px;
-		font-size: 1.5em;
-	}
-}
-#docs .doc {
-	min-height: 3em;
-}
-div#toHide.section-two.two{
-	display: none;
-	}
-}
 // DOCS/MEETINGS
 .meetings {
 	display: block;
@@ -363,4 +337,53 @@ div#header h1 {
 	textarea {
 		min-height: 250px;
 	}
+}
+
+// MEDIA QUERIES
+
+@media screen and (max-width: 1000px) {
+////// DOCS INDEX
+
+// DOCS/NOTES
+div.container {
+	margin: 0;
+}
+div.section-one {
+	width: 100%;
+	margin: 0 auto;
+	border: none;
+	div#sticky h1 {
+		background-color: #2C302E;
+		border-radius: 10px;
+		font-size: 1.5em;
+	}
+}
+#docs .doc {
+	min-height: 3em;
+}
+div#toHide.section-two.two{
+	display: none;
+	}
+}
+@media screen and (min-width: 1001px) {
+	div#section-two.section-two {
+		width: 80%;
+	}
+	div#toHide.section-two.two {
+		height: 100%;
+	}
+	div#toHide {
+		width: 100%;
+		float: right;
+	}
+	div.two {
+		width: 50%;
+	}
+	div#calendar{
+		float: right;
+	}
+	div.section-one {
+		width: 30%;
+	}
+
 }
