@@ -400,5 +400,14 @@ div#toHide.section-two.two{
 	#live-content {
 		width: 40%;
 	}
+input[type="text"] {
+		width: 40%;
+	}
+form#new_doc.simple_form.new_doc {
+	width: 100%!important;
+}
+div.input.string.optional.doc_title, div.input.text.optional.doc_content {
+	width: 60%;
+}
 
 }
