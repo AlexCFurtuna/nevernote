@@ -371,7 +371,7 @@ div#toHide.section-two.two{
 		width: 100%;
 	}
 	div#toHide.section-two.two {
-		height: 100%;
+		height: 700px;
 	}
 	div#toHide {
 		width: 100%;
@@ -386,11 +386,12 @@ div#toHide.section-two.two{
 	}
 	div.section-one {
 		width: 30%;
+		height: 700px;
 	}
 
 	div#content {
-		display: block;
-		width: 20%;
+		display: inline-block;
+		width: 30%;
 	}
 	div#show-sidebar {
 		display: block;
