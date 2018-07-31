@@ -49,7 +49,7 @@ button {
 div.section-one {
 	border: 2px solid $light_gray;
 	border-radius: 10px;
-	max-height: 675px;
+	max-height: 1000px;
 	overflow-y: scroll;
 	width: 30%;
 	margin-left: 4em;
@@ -227,6 +227,7 @@ ul li {
 	 border-right: 2px solid $light_gray;
 	 border-radius: 10px;
 	 margin: 0 0 0 auto;
+
  }
  #live-content  {
 	 width: 30%;
@@ -367,7 +368,7 @@ div#toHide.section-two.two{
 }
 @media screen and (min-width: 1001px) {
 	div#section-two.section-two {
-		width: 80%;
+		width: 100%;
 	}
 	div#toHide.section-two.two {
 		height: 100%;
@@ -381,9 +382,22 @@ div#toHide.section-two.two{
 	}
 	div#calendar{
 		float: right;
+		width: 100%;
 	}
 	div.section-one {
 		width: 30%;
+	}
+
+	div#content {
+		display: block;
+		width: 20%;
+	}
+	div#show-sidebar {
+		display: block;
+		width: 30%;
+	}
+	#live-content {
+		width: 40%;
 	}
 
 }
