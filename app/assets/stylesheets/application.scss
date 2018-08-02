@@ -7,8 +7,12 @@
 @import 'docs.scss';
 @import 'welcome.scss';
 @import 'nav.scss';
-
+$light_gray: #C0C1C1;
+button:hover {
+  background-color: $light_gray;
+}
 // FOOTER STYLING (OPTIONAL)
+
 .header_inner nav a {
   font-weight: bolder;
 }
@@ -32,4 +36,10 @@ footer {
 		margin: 0;
 		font-size: .65rem;
 	}
+}
+@media screen and (max-width: 768px) {
+  .form-inputs {
+    margin: 5em auto!important;
+    width: 80%!important;
+  }
 }

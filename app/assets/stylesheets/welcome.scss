@@ -1,18 +1,14 @@
 // STYLING FOR WELCOME PAGE
-body {
-	background-color: white;
-	margin: 0 auto;
-}
 #banner {
 	background-image: url(image_path("landing.jpg"));
-	background-attachment: fixed;
+	background-attachment: fixed!important;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position:top center;
 	width: 100%;
 	min-height: 1200px;
 	display: table;
-	margin-top: -15px;
+	margin-top: -250px;
 
 	.banner_content {
 		display: table-cell;
@@ -30,11 +26,11 @@ body {
 			margin: 0 0 2.5rem 0;
 			color: #5cb85c;
 		}
-		#sticky {
+		.sticky {
 			position: -webkit-sticky;
-			position: sticky;
 			bottom: 500px;
 			background-color: transparent;
+			z-index: 0;
 			h1 {
 				background-color: transparent;
 			}
@@ -108,6 +104,13 @@ body {
 	// Welcome page
 	#banner {
 		width: 100%;
+		background-attachment: scroll;
+		background-size: cover;
+		min-height: 400px;
+		margin-top: 0;
+		button {
+			padding: 5px;
+		}
 	}
 	div#float-right {
 		float: none;
@@ -120,13 +123,4 @@ body {
 	}
 	// Docs index
 
-}
-
-@media screen and (min-width: 768px) {
-	div#float-right {
-		float: right;
-	}
-	#banner {
-		background-attachment: scroll;
-	}
 }

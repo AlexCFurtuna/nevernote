@@ -5,12 +5,12 @@ body {
 	//background-image: url("/assets/bg-docs.jpg");
 	//background-repeat: no-repeat;
 	//background-size: cover;
-	//background-color: #F3E9DC!important;
+	background-color: #F3E9DC!important;
 	//background-color: #E1FAF9!important;
-	background-color: #F0F7EE!important;
+	//background-color: #F0F7EE!important;
 }
 div.container {
-	margin-top: 4em;
+	margin-top: 6em;
 }
 // DOCS INDEX
 .meetings {
@@ -63,10 +63,14 @@ ul li {
  .doc {
 	 min-height: 2em;
 	 background-color: #d9534f;
-	 margin: 1rem 2em;
 	 text-align: left;
 	 padding: .5em;
 	 border-radius: 10px;
+	 font-size: 1.5em;
+	 color: white;
+	 font-weight: 400;
+	 padding: 10px;
+	 margin: 1em auto!important;
 	 .title {
 		 color: white;
 		 margin: 0 auto;
@@ -106,15 +110,21 @@ ul li {
  	height: 640px;
  	background-color: #d9534f;
 	border-radius: 10px;
-	h1, h2, button, p, small {
+	h1, h2, p, small {
 		color: white;
-		border: 3px solid white;
-		border-radius: 10px;
+		border-bottom: 2px solid white;
 		width: 60%;
 		margin: 40px auto;
 		padding: 20px;
 		text-align: center;
 		font-weight: lighter;
+		button {
+			border: 2px solid white;
+			margin: 40px auto;
+			width: 60%;
+			border-radius: 10px;
+			font-weight: lighter;
+		}
 	}
 	button {
 
@@ -194,16 +204,16 @@ ul li {
 	 position: -webkit-sticky;
 	 position: sticky;
 	 top: 0;
-	 padding: 30px 10px 0 10px;
 	 background-color: transparent;
 	 h1 {
-		 background-color: #2C302E;
-		 font-size: 2em;
+		 background-color: $light_gray;
 		 font-weight: 400;
 		 color: white;
-		 margin: -30px auto 0 auto;
-		 padding: 20px;
 		 width: 100%;
+		 font-size: 1.5em;
+ 		 padding: 10px;
+ 		 margin: 0 auto!important;
+ 		 background-color: darkgrey!important;
 
 	 }
  }
@@ -295,12 +305,13 @@ form{
 .meetings {
 	display: block;
 	h1 {
-		background-color: #2C302E!important;
 		font-size: 1.5em;
 		color: white;
 		font-weight: 400;
 		margin: 0;
 		padding: 10px;
+		margin: 0 auto!important;
+		background-color: darkgrey!important;
 	}
 	ul {
 		min-height: 3em;
@@ -341,7 +352,26 @@ div#header h1 {
 }
 
 // MEDIA QUERIES
-
+@media screen and (max-width: 768px) {
+	.meetings h1, #wrapper_w_padding h1 {
+		width: 98%;
+		background-color: darkgrey!important;
+		border-radius: 0!important;
+	}
+	.meetings h1 {
+		margin-top: 3em!important;
+	}
+	.meetings ul, #docs .doc {
+		width: 85%;
+		margin: 1em auto;
+	}
+	.meetings ul:hover, .doc:hover {
+		background-color: $light_gray!important;
+	}
+	div.input.string.optional.doc_title, div.input.text.optional.doc_content {
+		width: 80%;
+	}
+}
 @media screen and (max-width: 1000px) {
 ////// DOCS INDEX
 
@@ -360,13 +390,23 @@ div.section-one {
 	}
 }
 #docs .doc {
-	min-height: 3em;
+	max-height: 3em;
 }
 div#toHide.section-two.two{
 	display: none;
 	}
 }
 @media screen and (min-width: 1001px) {
+	.meetings h1, #wrapper_w_padding h1 {
+
+	}
+	.meetings ul, #docs .doc {
+		width: 85%;
+		margin: 1em auto;
+	}
+	.meetings ul:hover, .doc:hover {
+		background-color: $light_gray!important;
+	}
 	div#section-two.section-two {
 		width: 100%;
 	}

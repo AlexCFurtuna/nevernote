@@ -1,9 +1,9 @@
 <div id="banner">
   <div class="banner_content">
-    <div id="sticky">
+    <div class="sticky">
       <h1>NeverNote</h1>
       <p>Your daily work!</p>
-      <button>
+      <button type="button">
         <% if user_signed_in? %>
           <%= link_to "Check Your Notes", docs_path %>
         <% else %>
