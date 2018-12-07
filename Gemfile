@@ -18,6 +18,7 @@ gem "activejob", ">= 5.2.1.1"
 gem "activestorage", ">= 5.2.1.1"
 gem "rack", ">= 2.0.6"
 gem "loofah", ">= 2.2.3"
+gem "rubyzip", ">= 1.2.2"
 # gem 'redis', '~> 4.0'
 # gem 'bcrypt', '~> 3.1.7'
 # gem 'mini_magick', '~> 4.8'
