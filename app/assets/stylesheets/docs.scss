@@ -19,32 +19,32 @@ div.container {
 	max-height: 1000px;
 	overflow-y: scroll;
 	display: none;
-ul {
-	min-height: 2em;
-	background-color: #d9534f;
-	margin: 1rem 2em;
-	text-align: left;
-	padding: .5em;
-	border-radius: 10px;
-	min-width: 60%!important;
-	color: white;
-	#m-name {
-		font-size: 1.2em;
-	}
-	#m-time {
-		font-size: .8em;
-		float: right;
-		margin-top: .35em;
-		font-weight: lighter;
-	}
-}
-ul:hover {
-	background-color: #555;
+		ul {
+			min-height: 2em;
+			background-color: #d9534f;
+			margin: 1rem 2em;
+			text-align: left;
+			padding: .5em;
+			border-radius: 10px;
+			min-width: 60%!important;
+			color: white;
+				#m-name {
+					font-size: 1.2em;
+				}
+				#m-time {
+					font-size: .8em;
+					float: right;
+					margin-top: .35em;
+					font-weight: lighter;
+				}
+			}
+	ul:hover {
+		background-color: #555;
 
-}
-button {
-	display: none;
 	}
+	button {
+		display: none;
+		}
 }
 div.section-one {
 	border: 2px solid $light_gray;
