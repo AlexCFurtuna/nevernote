@@ -12,7 +12,6 @@ gem 'simple_form', '~> 4.0', '>= 4.0.1'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 gem "simple_calendar", "~> 2.0"
 gem 'coffee-rails', '~> 4.2'
-gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem "activejob", ">= 5.2.1.1"
 gem "activestorage", ">= 5.2.1.1"
